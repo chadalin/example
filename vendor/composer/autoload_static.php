@@ -4,68 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcfcd71b2a7866833566e1ed9f1d23d65
+class ComposerStaticInit4eb3cdee4978781c8919dff5d8a9abca
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'PhpImap\\' => 8,
-        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
         ),
-        'D' => 
-        array (
-            'Delight\\Http\\' => 13,
-            'Delight\\Db\\' => 11,
-            'Delight\\Cookie\\' => 15,
-            'Delight\\Base64\\' => 15,
-            'Delight\\Auth\\' => 13,
-        ),
         'A' => 
         array (
-            'Aura\\SqlQuery\\' => 14,
             'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PhpImap\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-imap/php-imap/src/PhpImap',
-        ),
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
-        ),
-        'Delight\\Http\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/http/src',
-        ),
-        'Delight\\Db\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/db/src',
-        ),
-        'Delight\\Cookie\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/cookie/src',
-        ),
-        'Delight\\Base64\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/base64/src',
-        ),
-        'Delight\\Auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/delight-im/auth/src',
-        ),
-        'Aura\\SqlQuery\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/sqlquery/src',
         ),
         'App\\' => 
         array (
@@ -76,8 +35,8 @@ class ComposerStaticInitcfcd71b2a7866833566e1ed9f1d23d65
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcfcd71b2a7866833566e1ed9f1d23d65::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcfcd71b2a7866833566e1ed9f1d23d65::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4eb3cdee4978781c8919dff5d8a9abca::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4eb3cdee4978781c8919dff5d8a9abca::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
